@@ -72,9 +72,6 @@ pip install flask python-dotenv langchain-openai langgraph langgraph-checkpoint-
     "max_tokens": 8192
   }
 }
-```
-
-上传 GitHub 前不要提交真实 `api_key`。建议改成 `config.example.json`，真实配置只保留在本地，或通过 `.env` 注入。
 
 ## Run
 
@@ -215,28 +212,3 @@ graph
 ```
 
 如果这些 exe 不存在或不兼容当前系统，路径生成功能会失败，但图生成和导出仍可单独使用。
-
-## GitHub Notes
-
-上传前建议不要提交以下内容：
-
-```text
-backwards/config.json          # 如果包含真实 api_key
-backwards/.env
-backwards/workflow_state.db*
-backwards/graph_debug.txt
-graph_debug_summary.txt
-graph_debug_log.txt
-__pycache__/
-build/
-dist/
-exports/
-path/results/
-path/models/
-```
-
-建议新增 `.gitignore`，并把真实配置改成本地私有文件。
-
-## License
-
-如需开源，请在仓库中补充 `LICENSE` 文件。
