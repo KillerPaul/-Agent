@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制流图助手</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-shell" id="appShell">
+        <aside class="sidebar" id="sidebar">
+            <div>
+                <div class="sidebar-topbar">
+                    <div class="brand">
+                        <div class="brand-mark">CF</div>
+                        <div class="brand-copy">
+                            <p class="brand-title">控制流图助手</p>
+                            <p class="brand-subtitle">自然语言到控制流图</p>
+                        </div>
+                    </div>
+                    <button class="sidebar-toggle-button" type="button" id="sidebarToggle" aria-label="折叠左侧栏">
+                        <span class="toggle-open">&lt;</span>
+                        <span class="toggle-close">&gt;</span>
+                    </button>
+                </div>
+
+                <section class="sidebar-section">
+                    <p class="section-title">当前能力</p>
+                    <div class="history-list">
+                        <button class="history-item active" type="button">普通聊天</button>
+                        <button class="history-item" type="button">意图识别</button>
+                        <button class="history-item" type="button">图草稿生成与校验</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>交互说明</p>
+                <strong>统一发送入口，按意图切换</strong>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <section class="workspace graph-hidden" id="workspace">
+                <section class="chat-panel" id="chatPanel">
+                    <div class="panel-heading panel-heading-chat">
+                        <div>
+                            <p class="section-title">聊天区</p>
+                            <h3>消息入口</h3>
+                        </div>
+                        <div class="chat-header-actions">
+                            <button class="reopen-graph-button is-hidden" type="button" id="reopenGraphPanel">打开草稿区</button>
+                            <div class="status-pill" id="modeBadge">当前模式：普通聊天</div>
+                        </div>
+                    </div>
+
+                    <div class="chat-scroll" id="chatScroll">
+                        <article class="message-row ai">
+                            <div class="avatar">AI</div>
+                            <div class="message-bubble">
+                                <p class="message-author">控制流图助手</p>
+                                <p>直接描述你的需求。普通问题我会直接回复；如果你在描述流程，我会自动进入控制流图工作模式。</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <form class="composer" id="composerForm">
+                        <label class="composer-box" for="promptInput">
+                            <textarea id="promptInput" rows="1" placeholder="输入消息，系统会自动判断是普通聊天还是控制流图生成请求"></textarea>
+                        </label>
+                        <div class="composer-actions">
+                            <p class="composer-tip">Enter 发送，Shift + Enter 换行</p>
+                            <div class="composer-buttons">
+                                <button class="reopen-graph-button is-hidden" type="button" id="confirmEditButton">确认修改</button>
+                                <button class="send-button" type="submit">发送</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <div class="workspace-resizer is-hidden" id="workspaceResizer" aria-hidden="true"></div>
+
+                <section class="graph-panel is-hidden" id="graphPanel">
+                    <div class="panel-heading panel-heading-graph">
+                        <div>
+                            <p class="section-title">草稿区</p>
+                            <h3 id="graphTitle">尚未生成</h3>
+                        </div>
+                        <div class="graph-panel-actions">
+                            <div class="validation-pill" id="graphStatus">等待识别</div>
+                            <button class="close-panel-button" type="button" id="closeGraphPanel">关闭</button>
+                        </div>
+                    </div>
+
+                    <div class="graph-stage-shell">
+                        <div class="graph-stage">
+                            <div id="sdNavBar" class="sd-nav-bar is-hidden">
+                                <button class="sd-back-button" type="button" id="sdBackButton">&#8592; 返回上层</button>
+                                <span class="sd-breadcrumb" id="sdBreadcrumb"></span>
+                            </div>
+                            <div class="graph-toolbar">
+                                <div class="graph-progress" id="graphProgress">等待生成草稿...</div>
+                                <div class="graph-zoom-controls">
+                                    <button class="zoom-button" type="button" id="exportControlButton">导出 .control</button>
+                                    <button class="zoom-button" type="button" id="exportXmlButton">导出 XML</button>
+                                    <button class="zoom-button" type="button" id="zoomOutButton">-</button>
+                                    <span class="zoom-label" id="zoomLabel">100%</span>
+                                    <button class="zoom-button" type="button" id="zoomInButton">+</button>
+                                    <button class="zoom-button" type="button" id="zoomResetButton">重置</button>
+                                </div>
+                            </div>
+                            <svg class="graph-canvas" id="graphCanvas" viewBox="0 0 1200 820" preserveAspectRatio="xMidYMid meet">
+                                <defs>
+                                    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+                                        <path d="M0,0 L12,6 L0,12 z" class="arrow-head"></path>
+                                    </marker>
+                                </defs>
+                                <g id="graphPanLayer">
+                                    <g id="graphZoomLayer">
+                                        <g id="edgeLayer"></g>
+                                        <g id="nodeLayer"></g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <aside class="graph-inspector">
+                            <details class="accordion-card" open>
+                                <summary>生成进度</summary>
+                                <div class="graph-list" id="progressList">
+                                    <p class="empty-state">识别为控制流图请求后，会在这里显示生成过程。</p>
+                                </div>
+                            </details>
+
+                            <details class="accordion-card" open>
+                                <summary>选中节点</summary>
+                                <div class="graph-list" id="selectionInfo">
+                                    <p class="empty-state">点击节点后，会在这里显示详细信息。</p>
+                                </div>
+                            </details>
+
+                            <details class="accordion-card">
+                                <summary>校验结果</summary>
+                                <div class="graph-list" id="errorList">
+                                    <p class="empty-state">识别为控制流图请求后，会在这里显示校验结果。</p>
+                                </div>
+                            </details>
+
+                            <details class="accordion-card">
+                                <summary>原始 JSON</summary>
+                                <pre class="json-preview" id="jsonPreview">等待生成...</pre>
+                            </details>
+                        </aside>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

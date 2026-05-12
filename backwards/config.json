@@ -1,0 +1,9 @@
+{
+  "Chat_model": {
+    "base_url": "https://maas-api.cn-huabei-1.xf-yun.com/v2",
+    "model": "xop3qwen80bnext",
+    "api_key": "d37e417a0c9f7232b29788932a0df86a:ZmRlMDQ0ZjNkMWZjMTY0ZDE3MmQ0MGQ2",
+    "timeout": 60,
+    "max_tokens": 8192
+  }
+}

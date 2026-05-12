@@ -1,0 +1,196 @@
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='删除n13节点' errors=[]
+[route] → finalize (edit shortcut)
+[finalize] state_graph_nodes=13 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='删除n13节点' errors=[]
+[finalize] state_graph_nodes=13 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='把刚刚的n13改回去' errors=['end 节点 n14 必须至少有一条入边。']
+[finalize] state_graph_nodes=14 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='日志收集如果成功后面加一个普通节点，叫日志确认' errors=[]
+[finalize] state_graph_nodes=9 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=4 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='删掉n8节点' errors=[]
+[finalize] state_graph_nodes=7 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='启动红外后面再加一个启动成功节点' errors=[]
+[finalize] state_graph_nodes=9 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='确认修改' errors=[]
+[finalize] state_graph_nodes=9 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='启动红外后面加一个启动成功节点' errors=[]
+[finalize] state_graph_nodes=9 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='启动红外后面加一个启动成功节点' errors=[]
+[finalize] state_graph_nodes=9 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='在启动红外后面加入一个启动成功节点' errors=[]
+[finalize] state_graph_nodes=9 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=3 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=19 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=22 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=22 state_result_is_none=True
+[route] terminal=True strategy=None preview_instruction='' errors=None
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=22 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=12 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=17 state_result_is_none=False
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=14 state_result_is_none=False
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=系统状态机 states=8
+[sd_present_draft] presenting requirements draft
+[sd_negotiate] Phase-2 stub: auto-confirming
+[sd_generate] generating state diagram with recursive sub-diagrams
+[sd_generate] nodes=10 errors=0
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=红绿灯状态图 states=3
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=确认
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=红绿灯状态图 states=3
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=modify msg=请加一个黄灯闪烁状态
+[sd_apply_modification] applying user modification to requirements
+[sd_apply_modification] states=4
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=系统状态机 states=8
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=可以
+[sd_generate] generating state diagram with recursive sub-diagrams
+[sd_generate] nodes=1 errors=1
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=红绿灯状态图 states=3
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=好的确认
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=系统状态机 states=8
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=确认
+[sd_generate] generating state diagram with recursive sub-diagrams
+[sd_generate] nodes=10 errors=0
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=系统状态机 states=8
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=确认
+[sd_generate] generating state diagram with recursive sub-diagrams
+[sd_generate] nodes=10 errors=0
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=系统状态机 states=8
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=确认
+[sd_generate] generating state diagram with recursive sub-diagrams
+[sd_generate] nodes=10 errors=0
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=state_diagram
+[sd_parse_requirements] parsing state diagram requirements
+[sd_parse_requirements] title=任务执行系统状态图 states=9
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=modify msg=这个图里要有复合状态
+[sd_apply_modification] applying user modification to requirements
+[sd_apply_modification] states=9
+[sd_present_draft] presenting requirements draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] waiting for user feedback on draft
+[sd_interrupt_negotiate] feedback_type=confirm msg=确认
+[sd_generate] generating state diagram with recursive sub-diagrams
+[sd_generate] nodes=11 errors=0
+[sd_finalize] finalizing state diagram result
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=cfg
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=15 state_result_is_none=True
+[route] terminal=None strategy=model preview_instruction='结束节点前加一个普通节点，反馈结果' errors=[]
+[finalize] state_graph_nodes=16 state_result_is_none=False
+[determine_graph_type] classifying graph type
+[determine_graph_type] graph_type=cfg
+[route] terminal=None strategy=model preview_instruction='' errors=[]
+[finalize] state_graph_nodes=8 state_result_is_none=True

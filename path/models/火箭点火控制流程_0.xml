@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<UML:StateMachine xmlns:UML="href://org.omg/UML/1.3" SC="1" TC="1" FPC="1" TPC="1" ZOT="0">
+		<UML:StateMachine.top genre="XML">
+			<UML:CompositeState xmi.id="CompositeState.0" name="TOP">
+				<UML:CompositeState.subvertex>
+					<UML:Pseudostate kind="initial" xmi.id="n1" name="开始" container="CompositeState.0" incoming="" outgoing="e1 "/>
+					<UML:SimpleState xmi.id="n4" name="燃料压力是否达到设定阈值" container="CompositeState.0" incoming="e1 " outgoing="e4 e5 "/>
+					<UML:SimpleState xmi.id="n5" name="异常处理：记录故障日志并终止点火" container="CompositeState.0" incoming="e4 " outgoing="e6 "/>
+					<UML:SimpleState xmi.id="n7" name="自检是否通过" container="CompositeState.0" incoming="e5 " outgoing="e8 e9 "/>
+					<UML:SimpleState xmi.id="n8" name="安全中止：输出故障信息并结束流程" container="CompositeState.0" incoming="e8 " outgoing="e10 "/>
+					<UML:SimpleState xmi.id="n11" name="推力是否异常或燃烧是否不稳定" container="CompositeState.0" incoming="e9 " outgoing="e13 e14 "/>
+					<UML:SimpleState xmi.id="n12" name="紧急关机：执行紧急关机操作并结束流程" container="CompositeState.0" incoming="e13 " outgoing="e15 "/>
+					<UML:SimpleState xmi.id="n13" name="判定点火成功：记录状态并进入稳定运行阶段" container="CompositeState.0" incoming="e14 " outgoing="e16 "/>
+					<UML:FinalState xmi.id="n14" name="结束" container="CompositeState.0" incoming="e6 e10 e15 e16 " outgoing=""/>
+				</UML:CompositeState.subvertex>
+			</UML:CompositeState>
+		</UML:StateMachine.top>
+		<UML:StateMachine.transitions>
+			<UML:Transition xmi.id="e1" name="e1" source="n1" target="n4"/>
+			<UML:Transition xmi.id="e4" name="e4" source="n4" target="n5">
+				<UML:Transition.trigger>
+					<UML:ChangeEvent xmi.id="UMLCondition.e4" transition="e4" name="Condition.e4">
+						<UML:Transition.guard expression="!(燃料压力达到设定阈值)"/>
+					</UML:ChangeEvent>
+				</UML:Transition.trigger>
+			</UML:Transition>
+			<UML:Transition xmi.id="e5" name="e5" source="n4" target="n7">
+				<UML:Transition.trigger>
+					<UML:ChangeEvent xmi.id="UMLCondition.e5" transition="e5" name="Condition.e5">
+						<UML:Transition.guard expression="(燃料压力达到设定阈值)"/>
+					</UML:ChangeEvent>
+				</UML:Transition.trigger>
+			</UML:Transition>
+			<UML:Transition xmi.id="e6" name="e6" source="n5" target="n14"/>
+			<UML:Transition xmi.id="e8" name="e8" source="n7" target="n8">
+				<UML:Transition.trigger>
+					<UML:ChangeEvent xmi.id="UMLCondition.e8" transition="e8" name="Condition.e8">
+						<UML:Transition.guard expression="!(自检通过)"/>
+					</UML:ChangeEvent>
+				</UML:Transition.trigger>
+			</UML:Transition>
+			<UML:Transition xmi.id="e9" name="e9" source="n7" target="n11">
+				<UML:Transition.trigger>
+					<UML:ChangeEvent xmi.id="UMLCondition.e9" transition="e9" name="Condition.e9">
+						<UML:Transition.guard expression="(自检通过)"/>
+					</UML:ChangeEvent>
+				</UML:Transition.trigger>
+			</UML:Transition>
+			<UML:Transition xmi.id="e10" name="e10" source="n8" target="n14"/>
+			<UML:Transition xmi.id="e13" name="e13" source="n11" target="n12">
+				<UML:Transition.trigger>
+					<UML:ChangeEvent xmi.id="UMLCondition.e13" transition="e13" name="Condition.e13">
+						<UML:Transition.guard expression="!(推力正常且燃烧稳定)"/>
+					</UML:ChangeEvent>
+				</UML:Transition.trigger>
+			</UML:Transition>
+			<UML:Transition xmi.id="e14" name="e14" source="n11" target="n13">
+				<UML:Transition.trigger>
+					<UML:ChangeEvent xmi.id="UMLCondition.e14" transition="e14" name="Condition.e14">
+						<UML:Transition.guard expression="(推力正常且燃烧稳定)"/>
+					</UML:ChangeEvent>
+				</UML:Transition.trigger>
+			</UML:Transition>
+			<UML:Transition xmi.id="e15" name="e15" source="n12" target="n14"/>
+			<UML:Transition xmi.id="e16" name="e16" source="n13" target="n14"/>
+		</UML:StateMachine.transitions>
+	</UML:StateMachine>

@@ -1,0 +1,32 @@
+{
+    "Tr1": [
+        "e3",
+        "DecideControl1",
+        "e4"
+    ],
+    "Tr2": [
+        "e3",
+        "DecideControl1",
+        "e5"
+    ],
+    "Tr3": [
+        "e7",
+        "DecideControl2",
+        "e8"
+    ],
+    "Tr4": [
+        "e7",
+        "DecideControl2",
+        "e9"
+    ],
+    "Tr5": [
+        "e12",
+        "DecideControl3",
+        "e13"
+    ],
+    "Tr6": [
+        "e12",
+        "DecideControl3",
+        "e14"
+    ]
+}

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<GenerationResult>
+		<PathSet>
+			<ParentState xmi.id="CompositeState.0" isConcurrency="">
+				<Group xmi.id="Group1">
+					<Path xmi.id="path1">
+						<PathInfo>
+							<State xmi.id="n1"/>
+							<Transition xmi.id="e1"/>
+							<State xmi.id="n4"/>
+							<Transition xmi.id="e5"/>
+							<State xmi.id="n7"/>
+							<Transition xmi.id="e8"/>
+							<State xmi.id="n8"/>
+							<Transition xmi.id="e10"/>
+							<State xmi.id="n14"/>
+						</PathInfo>
+						<CoveringInfo>
+							<CoveringArray coverageCriteria="SC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n8"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TC">
+								<CoveringComponent>
+									<Transition xmi.id="e1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e5"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e8"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e10"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="FPC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<Transition xmi.id="e1"/>
+									<State xmi.id="n4"/>
+									<Transition xmi.id="e5"/>
+									<State xmi.id="n7"/>
+									<Transition xmi.id="e8"/>
+									<State xmi.id="n8"/>
+									<Transition xmi.id="e10"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="1">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n8"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+									<State xmi.id="n8"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="2">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n8"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n8"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="3">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n8"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="0">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n8"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="1"/>
+							<CoveringArray coverageCriteria="ZOT" order="2"/>
+						</CoveringInfo>
+					</Path>
+				</Group>
+				<Group xmi.id="Group2">
+					<Path xmi.id="path2">
+						<PathInfo>
+							<State xmi.id="n1"/>
+							<Transition xmi.id="e1"/>
+							<State xmi.id="n4"/>
+							<Transition xmi.id="e5"/>
+							<State xmi.id="n7"/>
+							<Transition xmi.id="e9"/>
+							<State xmi.id="n11"/>
+							<Transition xmi.id="e13"/>
+							<State xmi.id="n12"/>
+							<Transition xmi.id="e15"/>
+							<State xmi.id="n14"/>
+						</PathInfo>
+						<CoveringInfo>
+							<CoveringArray coverageCriteria="SC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n11"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n12"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TC">
+								<CoveringComponent>
+									<Transition xmi.id="e1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e5"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e9"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e13"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e15"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="FPC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<Transition xmi.id="e1"/>
+									<State xmi.id="n4"/>
+									<Transition xmi.id="e5"/>
+									<State xmi.id="n7"/>
+									<Transition xmi.id="e9"/>
+									<State xmi.id="n11"/>
+									<Transition xmi.id="e13"/>
+									<State xmi.id="n12"/>
+									<Transition xmi.id="e15"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="1">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="2">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="3">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="0">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n12"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="1"/>
+							<CoveringArray coverageCriteria="ZOT" order="2"/>
+						</CoveringInfo>
+					</Path>
+				</Group>
+				<Group xmi.id="Group3">
+					<Path xmi.id="path3">
+						<PathInfo>
+							<State xmi.id="n1"/>
+							<Transition xmi.id="e1"/>
+							<State xmi.id="n4"/>
+							<Transition xmi.id="e5"/>
+							<State xmi.id="n7"/>
+							<Transition xmi.id="e9"/>
+							<State xmi.id="n11"/>
+							<Transition xmi.id="e14"/>
+							<State xmi.id="n13"/>
+							<Transition xmi.id="e16"/>
+							<State xmi.id="n14"/>
+						</PathInfo>
+						<CoveringInfo>
+							<CoveringArray coverageCriteria="SC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n11"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n13"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TC">
+								<CoveringComponent>
+									<Transition xmi.id="e1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e5"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e9"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e14"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e16"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="FPC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<Transition xmi.id="e1"/>
+									<State xmi.id="n4"/>
+									<Transition xmi.id="e5"/>
+									<State xmi.id="n7"/>
+									<Transition xmi.id="e9"/>
+									<State xmi.id="n11"/>
+									<Transition xmi.id="e14"/>
+									<State xmi.id="n13"/>
+									<Transition xmi.id="e16"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="1">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="2">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="3">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="0">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n7"/>
+									<State xmi.id="n11"/>
+									<State xmi.id="n13"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="1"/>
+							<CoveringArray coverageCriteria="ZOT" order="2"/>
+						</CoveringInfo>
+					</Path>
+				</Group>
+				<Group xmi.id="Group4">
+					<Path xmi.id="path4">
+						<PathInfo>
+							<State xmi.id="n1"/>
+							<Transition xmi.id="e1"/>
+							<State xmi.id="n4"/>
+							<Transition xmi.id="e4"/>
+							<State xmi.id="n5"/>
+							<Transition xmi.id="e6"/>
+							<State xmi.id="n14"/>
+						</PathInfo>
+						<CoveringInfo>
+							<CoveringArray coverageCriteria="SC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n5"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TC">
+								<CoveringComponent>
+									<Transition xmi.id="e1"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e4"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<Transition xmi.id="e6"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="FPC">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<Transition xmi.id="e1"/>
+									<State xmi.id="n4"/>
+									<Transition xmi.id="e4"/>
+									<State xmi.id="n5"/>
+									<Transition xmi.id="e6"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="1">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n5"/>
+								</CoveringComponent>
+								<CoveringComponent>
+									<State xmi.id="n4"/>
+									<State xmi.id="n5"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="2">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n5"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="TPC" order="3"/>
+							<CoveringArray coverageCriteria="ZOT" order="0">
+								<CoveringComponent>
+									<State xmi.id="n1"/>
+									<State xmi.id="n4"/>
+									<State xmi.id="n5"/>
+									<State xmi.id="n14"/>
+								</CoveringComponent>
+							</CoveringArray>
+							<CoveringArray coverageCriteria="ZOT" order="1"/>
+							<CoveringArray coverageCriteria="ZOT" order="2"/>
+						</CoveringInfo>
+					</Path>
+				</Group>
+			</ParentState>
+		</PathSet>
+	</GenerationResult>
