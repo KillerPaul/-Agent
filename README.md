@@ -9,7 +9,7 @@
 - 桌面入口：通过 PySide6 WebEngine 包装本地 Web 应用。
 - LangGraph 工作流：负责意图识别、图生成、图编辑、自动修复、状态保存和中断恢复。
 
-![预览](https://github.com/KillerPaul/-Agent/edit/main/preview.png)
+![预览](https://github.com/KillerPaul/-Agent/blob/main/preview.png)
 
 ## Features
 
